@@ -526,6 +526,11 @@ export const actionChangeFontFamily = register({
         text: t("labels.code"),
         icon: <FontFamilyCodeIcon theme={appState.theme} />,
       },
+      {
+        value: FONT_FAMILY.NewYenian,
+        text: t("labels.handDrawnCn"),
+        icon: <FontFamilyHandDrawnIcon theme={appState.theme} />,
+      },
     ];
 
     return (

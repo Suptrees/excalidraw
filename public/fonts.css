@@ -11,3 +11,10 @@
   src: url("Cascadia.woff2");
   font-display: swap;
 }
+
+/* 新叶念体 */
+@font-face {
+  font-family: "NewYenian";
+  src: url("NewYenian.otf");
+  font-display: swap;
+}
