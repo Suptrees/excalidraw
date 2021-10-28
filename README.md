@@ -14,6 +14,12 @@
   <p>Ask questions or hang out on our <a target="_blank" href="https://discord.gg/UexuTaE">discord.gg/UexuTaE</a>.</p>
 </div>
 
+## Frok 仓库说明
+
+原仓库没有汉字手写体，所以 fork 下来增加了汉字手写体（新叶念体），自用。
+
+---
+
 ## Try it now
 
 Go to [excalidraw.com](https://excalidraw.com) to start sketching.
