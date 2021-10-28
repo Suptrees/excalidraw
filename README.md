@@ -18,8 +18,6 @@
 
 原仓库没有汉字手写体，所以 fork 下来增加了汉字手写体（新叶念体），自用。
 
----
-
 ## Try it now
 
 Go to [excalidraw.com](https://excalidraw.com) to start sketching.
