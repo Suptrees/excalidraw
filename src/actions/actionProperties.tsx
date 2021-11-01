@@ -528,7 +528,7 @@ export const actionChangeFontFamily = register({
       },
       {
         value: FONT_FAMILY.NewYenian,
-        text: t("labels.handDrawnCn"),
+        text: "手写汉字",
         icon: <FontFamilyHandDrawnIcon theme={appState.theme} />,
       },
     ];
@@ -545,7 +545,21 @@ export const actionChangeFontFamily = register({
             (element) => isTextElement(element) && element.fontFamily,
             appState.currentItemFontFamily || DEFAULT_FONT_FAMILY,
           )}
-          onChange={(value) => updateData(value)}
+          onChange={(value) => {
+            const buttonList = document.querySelector(".buttonList");
+
+            if (buttonList) {
+              const mediumFontSizeBtn = buttonList.children[1] as HTMLElement;
+              const largeFontSizeBtn = buttonList.children[2] as HTMLElement;
+
+              if (value === 4) {
+                largeFontSizeBtn.click();
+              } else {
+                mediumFontSizeBtn.click();
+              }
+            }
+            updateData(value);
+          }}
         />
       </fieldset>
     );
